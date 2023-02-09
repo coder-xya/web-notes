@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>理解css中的坐标系</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div {
+      width: 200px;
+      height: 100px;
+      background-color: skyblue;
+
+      /* 先平移后旋转vs先旋转后平移 ，注意坐标系的变化*/
+      /* transform: translate(100px) rotate(45deg); */
+      transform: rotate(45deg) translate(100px);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
+  </div>
+</body>
+
+</html>
