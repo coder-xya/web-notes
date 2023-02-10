@@ -17,9 +17,12 @@
       height: 100px;
       background-color: skyblue;
 
-      /* 先平移后旋转vs先旋转后平移 ，注意坐标系的变化*/
-      /* transform: translate(100px) rotate(45deg); */
-      transform: rotate(45deg) translate(100px);
+      /* 形变 */
+      transform: rotate(45deg);
+      /* 修改坐标系原点 */
+      /* left=>0, 50% */
+      /* bottom=>50%, 100% */
+      transform-origin: left;
     }
   </style>
 </head>
